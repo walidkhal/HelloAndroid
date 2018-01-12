@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context="com.example.android.helloandroid1.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/udacity_img" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".28"
+            android:scaleType="fitXY"
+            android:src="@drawable/udacity_logo" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="#24ccf9"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#8000"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- website information-->
+            <LinearLayout style="@style/single_information_container">
+
+                <ImageView
+                    style="@style/single_information_icon"
+                    android:src="@drawable/website" />
+
+                <TextView
+                    style="@style/single_information_text"
+                    android:text="@string/web_site"
+                    android:autoLink="web"/>
+            </LinearLayout>
+            <!-- address information-->
+            <LinearLayout style="@style/single_information_container">
+
+                <ImageView
+                    style="@style/single_information_icon"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    style="@style/single_information_text"
+                    android:text="@string/street" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/single_information_container">
+
+                <ImageView
+                    style="@style/single_information_icon"
+                    android:src="@drawable/address" />
+
+                <TextView
+                    style="@style/single_information_text"
+                    android:text="@string/city" />
+            </LinearLayout>
+
+            <!-- phone information-->
+            <LinearLayout style="@style/single_information_container">
+
+                <ImageView
+                    style="@style/single_information_icon"
+                    android:src="@drawable/phone" />
+
+                <TextView
+                    style="@style/single_information_text"
+                    android:text="@string/phone_number"
+                    android:autoLink="phone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
